@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Responda:</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://kit.fontawesome.com/9d245cc907.js" crossorigin="anonymous"></script>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/noui/nouislider.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
+
+	<div class="container-contact100">
+		<div class="wrap-contact100">
+			<form action="./formulario.php" method = "POST" >
+				<span class="contact100-form-title">
+					Responda:
+				</span>
+				
+				<div class="wrap-input100 input100-select bg1">
+					<span class="label-input100">Tipo de modelo da Campanha:</span>
+					<div>
+						<select class="js-select2" name="campanha">
+							<option>Por favor escolha uma :</option>
+							<option>Aniversário da empresa</option>
+							<option>Feriado prolongado</option>
+							<option>Promoção de auto peças</option>
+							<option>Revisão do veículo</option>
+						</select>
+						<div class="dropDownSelect2"></div>
+					</div>
+				</div>
+				
+				<div class="wrap-input100 validate-input bg1" data-validate="Por favor digite o título do email">
+					<span class="label-input100">Título do email que iremos encaminhar para o cliente</span> <i class="far fa-question-circle" data-toggle="tooltip" data-placement="top" title="Substituimos o 'Cliente' pelo nome do seu cliente para nos aproximar dele.O título e criatividade é da sua escolha, mas estamos aqui se precisar"></i>
+					<input class="input100" type="text" name="titulo" placeholder="Olá cliente, sou eu Anésio Modesto, tudo bem?">
+				</div>
+
+				<div class="wrap-input100 validate-input bg1" data-validate="Digite o conteúdo do email">
+					<span class="label-input100">Conteúdo do Email</span> <i class="far fa-question-circle" data-toggle="tooltip" data-placement="top" title="Ex: E ae, tudo bem com você? Esperamos que sim. Só estamos te mandando esse e-mail pra você não esquecer da gente, porque não nos esquecemos de você. Passe na nossa empresa para fazer a revisão do seu carro, estamos com ótimo preços especialmente pra você"></i>
+					<textarea class="input100" type="text" name="conteudo_email" placeholder="Digite aqui o conteúdo desejado."></textarea>
+				</div>
+
+				<div class="wrap-input100 validate-input bg1" data-validate="Digite rodapé do email">
+					<span class="label-input100">Rodapé do Email</span> <i class="far fa-question-circle" data-toggle="tooltip" data-placement="top" title="Sabe aquele finzinho do e-mail ? A gente bota uma frase pra voce lá também, só nos mandar o que quer que escrevemos e deixa com a gente."></i>
+					<textarea class="input100" type="text" name="rodape" placeholder="Digite aqui o rodapé escolhido."></textarea>
+				</div>
+
+				<div class="wrap-input100 validate-input bg1" data-validate="Qual a data e hora que você prefere que o email seja disparado?">
+					<span class="label-input100">Data e Hora que deseja que nós disparemos o E-mail aos seus cliente</span><i class="far fa-question-circle" data-toggle="tooltip" data-placement="top" title="Geralmente é bom de manhazinha ou no final do dia, que é quando seu cliente ta abrindo o e-mail na empresa dele, ou quando ele tá abrindo o e-mail em casa, mas aqui VOCÊ DECIDE."></i>
+					<input class="input100" type="text" name="dh_email" placeholder="Insira a Data e Hora de sua escolha.">
+				</div>
+				
+				<div class="wrap-input100 validate-input bg1" data-validate="Qual será o conteúdo do SMS?">
+					<span class="label-input100">Conteúdo do SMS que iremos enviar pra ele</span>
+					<textarea class="input100" type="text" name="conteudo_sms" placeholder="Aqui joga tua criatividade, a gente tem um limite de 150 caracteres, não vá passar disso hein? rs"></textarea>
+					<small>
+						<strong class="label-input100">150 </strong>Caracteres restantes
+					</small>
+				</div>
+
+				<div class="wrap-input100 validate-input bg1" data-validate="Qual a data e hora que você prefere que o sms seja disparado? ">
+					<span class="label-input100">Data e Hora em que deseja que disparemos o SMS para seus cliente</span><i class="far fa-question-circle" data-toggle="tooltip" data-placement="top" title="Geralmente é bom de manhazinha ou no final do dia, que é quando seu cliente ta abrindo o e-mail na empresa dele, ou quando ele tá abrindo o e-mail em casa, mas aqui VOCÊ DECIDE."></i>
+					<input class="input100" type="text" name="dh_sms" placeholder="Insira a Data e Hora de sua escolha.">
+				</div>
+
+				<div class="wrap-input100 input100-select bg1">
+					<span class="label-input100">Período em que seus clientes não retornam à loja:</span>
+					<div>
+						<select class="js-select2" name="retorno">
+							<option>Por favor escolha uma opção</option>
+							<option>3 meses</option>
+							<option>6 meses</option>
+							<option>9 meses</option>
+							<option>1 ano</option>
+						</select>
+						<div class="dropDownSelect2"></div>
+					</div>
+				</div>
+
+				<div class="w-full dis-none js-show-service">
+					<div class="wrap-contact100-form-radio">
+						<span class="label-input200">Precisamos dessas informações acima pra tentar te ajudar no faturamento,
+							<br>Manda para nós o mais rápido que conseguir que iremos nos esforçar ao máximo pra trazer seu cliente de volta o mais rápido possível.
+							<br>
+							<br>Caso tiver dúvidas pode nos chamar aqui que entraremos em contato.
+					        <br>
+							<br>À disposição.
+							Depto. de Inovações.
+							Setor + Lucro.</span> </div>
+				
+							<div class="container-contact100-form-btn">
+								<button class="contact100-form-btn">
+									<span>
+										Enviar
+										<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+									</span>
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+																											
+<!--===============================================================================================-->
+<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+	<script>
+		$(".js-select2").each(function(){
+			$(this).select2({
+				minimumResultsForSearch: 20,
+				dropdownParent: $(this).next('.dropDownSelect2')
+			});
+
+
+			$(".js-select2").each(function(){
+				$(this).on('select2:close', function (e){
+					if($(this).val() == "Please chooses") {
+						$('.js-show-service').slideUp();
+					}
+					else {
+						$('.js-show-service').slideUp();
+						$('.js-show-service').slideDown();
+					}
+				});
+			});
+		})
+	</script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/noui/nouislider.min.js"></script>
+	<script>
+	    var filterBar = document.getElementById('filter-bar');
+
+	    noUiSlider.create(filterBar, {
+	        start: [ 1500, 3900 ],
+	        connect: true,
+	        range: {
+	            'min': 1500,
+	            'max': 7500
+	        }
+	    });
+
+	    var skipValues = [
+	    document.getElementById('value-lower'),
+	    document.getElementById('value-upper')
+	    ];
+
+	    filterBar.noUiSlider.on('update', function( values, handle ) {
+	        skipValues[handle].innerHTML = Math.round(values[handle]);
+	        $('.contact100-form-range-value input[name="from-value"]').val($('#value-lower').html());
+	        $('.contact100-form-range-value input[name="to-value"]').val($('#value-upper').html());
+	    });
+	</script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+
+</body>
+</html>
+
+
+
+</body>
+</html>
